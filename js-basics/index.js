@@ -1,4 +1,4 @@
-function multiple(a,b) {
+function multiple(a,c) {
     return a * b;
     
 }
