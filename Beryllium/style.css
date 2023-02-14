@@ -1,0 +1,609 @@
+:root {
+  --color-primary: #030c57;
+  --color-secondary: #ee9e01;
+  --grey: #eee;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  max-width: 100vw;
+  font-family: manrope;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+/* Starts Here */
+/* Header */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  height: 10vh;
+}
+nav img {
+  height: 10vh;
+}
+.hamburger {
+  font-size: 2rem;
+  color: #ee9e01;
+  display: none;
+  border: 1px solid #eee;
+  transition: all 1s;
+}
+.navUl {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  width: 80%;
+  /* margin-left: 50rem; */
+}
+
+.navUl li {
+  list-style: none;
+  padding-left: 2rem;
+  position: relative;
+}
+.navUl li a:hover {
+  transition: all 1s;
+}
+
+.navUl li a:hover:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 3rem;
+  height: 15%;
+  background-color: var(--color-secondary);
+  transition: all 1s ease;
+}
+/**** BANNER SECTION ******/
+
+.main {
+  /* max-width: 100rem; */
+  height: 100vh;
+  background-image: url(./Assets/images/girl.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #d3d3d8;
+  background-clip: padding-box;
+}
+.berrylium {
+  width: 100%;
+}
+.banner-title > * {
+  width: 100%;
+
+  font-weight: 200;
+  padding-left: 20rem;
+  color: #030c57;
+}
+.banner-title h1 {
+  font-size: 4rem;
+  margin: auto;
+  padding-top: 15rem;
+}
+.banner-title h1 span {
+  display: block;
+}
+.banner-title p {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  font-size: 1.5rem;
+  /* border: 1px solid #030C57; */
+  text-align: center;
+  margin-left: 20rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: #eee;
+  background-color: #030c57;
+}
+.btn:hover {
+  background-color: #d38c00;
+  transition: all 1s ease-in-out;
+}
+/* NETWORK BANNER */
+.networks {
+  background-color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+}
+
+.network-banner img {
+  border: 1px solid transparent;
+  padding: 2rem;
+  /* width: 85%; */
+  box-shadow: rgb(255, 253, 253) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.group {
+  width: 83%;
+}
+/* .network-banner:first-child{
+    width: 9%;
+ } */
+.network-banner p {
+  font-size: 1.8rem;
+  color: #030c57;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ABOUT SECTION */
+.about {
+  background: linear-gradient(to right, #030c57, #d38c00);
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 4rem;
+  /* height: 40vh; */
+}
+.ptitle h2 {
+  width: 90%;
+  font-size: 4rem;
+  margin-right: 9rem;
+  padding-top: 4rem;
+  text-align: center;
+}
+.p-content {
+  width: 50%;
+  margin: 0 auto;
+  align-self: center;
+
+  font-size: 2rem;
+  padding-bottom: 0 2rem 6rem 10rem;
+}
+.p-content p {
+  font-size: 2rem;
+}
+.private ul li {
+  margin-left: 7rem;
+}
+/* SYNDICATION SECTION */
+.syndicate {
+  place-items: center;
+}
+.syndicate-title h2 {
+  font-size: 3.5rem;
+  color: var(--color-primary);
+  text-align: center;
+  font-family: manrope;
+  margin: 3rem;
+}
+.syndicate-title span {
+  color: var(--color-secondary);
+}
+.syndicate-content {
+  background-color: #fff;
+  width: 80%;
+  margin: 4rem;
+  padding: 2rem;
+  align-self: center;
+  margin-left: 14rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 20px, rgba(0, 0, 0, 0.09) 0px 4px 20px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.syndicste-image img {
+  width: 55rem;
+  margin-right: 3rem;
+}
+.syndicate-paragraphs {
+  margin-top: 1rem;
+  width: 50%;
+  font-size: 1.7rem;
+  line-height: 2;
+  font-weight: 600;
+}
+.syndicate-paragraphs p {
+  font-size: 1.7rem;
+  line-height: 1;
+  font-weight: 400;
+}
+.syndicate-paragraphs ul li {
+  /* list-style: none; */
+}
+
+.investors {
+  padding: 7rem 5rem 1rem 2.7rem;
+  background-color: #cbd1ff;
+}
+.investorcnt1 p:first-child {
+  color: #d38c00;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.investors-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  color: #030c57;
+}
+.investorcnt1 {
+  width: 55%;
+}
+.investorcnt1 h2 {
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+}
+.investorcnt1 h2 span {
+  display: block;
+}
+.startinvesting {
+  margin-top: rem;
+
+  color: #030c57;
+  display: block;
+  cursor: pointer;
+}
+.risk {
+  color: #030c57;
+  cursor: pointer;
+  text-decoration: double;
+  margin-bottom: 5rem;
+}
+.investorimage img {
+  width: 48rem;
+}
+footer {
+  background: #030c57;
+  padding: 1rem 3rem;
+  font-family: "Manrope", sans-serif;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #ffffff;
+  padding-top: 60px;
+}
+footer ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+footer ul h5 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 1rem;
+}
+footer ul li {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 6px 1rem;
+  margin: 5px 0;
+  line-height: 18px;
+  color: #f0eded;
+  cursor: pointer;
+}
+footer .foot {
+  margin-top: 40px;
+  border-top: 1px solid #d38c00;
+}
+footer .foot h5 {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 25px;
+  text-align: center;
+  padding: 20px;
+  color: #f0eded;
+}
+footer .newsletter {
+  margin-top: 30px;
+  padding: 3rem;
+}
+footer .newsletter p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+footer .newsletter .input_card input {
+  margin-top: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 65%;
+  border: 0;
+  padding: 15px;
+  outline: 0;
+}
+footer .newsletter .input_card button {
+  border: 0;
+  padding: 15px 4px;
+  width: 30%;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #d38c00;
+  color: #fff;
+  font-weight: 500;
+}
+
+.search_set {
+  border: 1px solid #d38c00;
+  padding: 0 10px;
+  border-radius: 5px;
+  max-width: 300px;
+  margin-top: 20px;
+  width: 100%;
+}
+.search_set img {
+  width: 25px;
+  margin-right: 0px;
+  position: relative;
+  top: 6px;
+}
+.search_set input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/******* MOBILE SCREENS *****/
+@media screen and (max-width: 994px) {
+  .banner-title > * {
+    padding-left: 4rem;
+  }
+  .banner-title h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-title a {
+    margin-left: 3.5rem;
+  }
+  .ptitle h2 {
+    font-size: 4rem;
+    padding-right: 9rem;
+  }
+
+  .p-content {
+    width: 80%;
+    padding-left: 5rem;
+    align-self: center;
+    margin: 0 auto;
+
+    /* text-align: center; */
+    /* place-items: center; */
+    font-size: 2rem;
+  }
+  .p-content p {
+    font-size: 1.7rem;
+  }
+  .private ul li {
+    margin-left: 4rem;
+    font-size: 1.8rem;
+  }
+  /* Syndicate Section */
+  .syndicate-title h2 {
+    font-size: 2.3rem;
+  }
+  .syndicate-content {
+    flex-direction: column;
+    margin: 1rem;
+    padding: 2rem;
+
+    width: 100%;
+    box-shadow: none;
+
+    /* padding: 0rem 6rem; */
+  }
+  .syndicste-image img {
+    width: 35rem;
+    margin-right: 6rem;
+    padding: 0;
+
+    align-self: center;
+  }
+  /* .syndicste-image {
+    margin: 0;
+    padding: 0;
+  } */
+  .syndicate-paragraphs {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 600;
+    color: #030c57;
+    margin-bottom: 2rem;
+  }
+  .investors-content {
+    flex-direction: column-reverse;
+  }
+  .investorcnt1 {
+    width: 100%;
+  }
+  .investorcnt1 h2 span {
+    display: inline;
+  }
+  .investorimage img {
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* HEADER SECTION */
+  .hamburger {
+    display: inline-block;
+  }
+
+  .hamburger i {
+    font-size: 1.5rem;
+    color: #ee9e01;
+    padding: 1rem;
+    transition: all 0.3s;
+  }
+
+  .navUl {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 57%;
+    height: 100%;
+    display: block;
+    background-color: #030c57;
+    padding-top: 2rem;
+    /* transform: translateX(-150%); */
+    z-index: 11;
+    transition: all 0.5s;
+  }
+  .navUl li {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-secondary);
+    padding-bottom: 1rem;
+  }
+
+  .navUl li a {
+    color: #eee;
+    padding: 1rem 2.5rem;
+    transition: all 0.3s;
+    font-size: 1.9rem;
+  }
+
+  /* BANNER SECTION */
+  .banner-title > * {
+    padding-left: 4rem;
+  }
+  .banner-title h1 {
+    font-size: 2rem;
+  }
+  .banner-title p {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .main {
+    /* background-image: none; */
+  }
+  /* NETWOR SECTION */
+  .networks {
+    flex-direction: column;
+  }
+  .network-banner img {
+    margin-top: 2rem;
+    padding: 4rem 8rem;
+    text-align: center;
+    width: 100%;
+  }
+  /* ABOUT SECTION */
+  .ptitle h2 {
+    font-size: 2.5rem;
+    padding-right: 3rem;
+    margin: 0rem 1rem;
+  }
+  .p-content {
+    width: 100%;
+    padding: 1.2rem;
+    margin-left: 0.8rem;
+    align-self: center;
+    font-size: 1.5rem;
+  }
+  .p-content p {
+    font-size: 1.3rem;
+  }
+  .private ul li {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+  }
+  .syndicate-title h2 {
+    font-size: 2.3rem;
+  }
+  .syndicate-content {
+    flex-direction: column;
+    margin: 1rem;
+    padding: 2rem;
+
+    width: 100%;
+    box-shadow: none;
+
+    /* padding: 0rem 6rem; */
+  }
+  .syndicste-image img {
+    width: 70%;
+    margin-right: 6rem;
+    padding: 0;
+
+    align-self: center;
+  }
+  /* .syndicste-image {
+    margin: 0;
+    padding: 0;
+  } */
+  .syndicate-paragraphs {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 600;
+    color: #030c57;
+    margin-bottom: 2rem;
+  }
+  .syndicate-paragraphs p {
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 600;
+    color: #030c57;
+  }
+  .syndicate-paragraphs ul li {
+    margin-bottom: 1.3rem;
+  }
+  .find {
+    margin: 7rem 4rem 0rem 4rem;
+
+    text-align: center;
+  }
+  .investors-content {
+    flex-direction: column-reverse;
+  }
+  .investorimage img {
+    width: 100%;
+  }
+  .investorcnt1 {
+    width: 100%;
+  }
+  .investorcnt1 h2 {
+    font-size: 2.5rem;
+  }
+  .investorcnt1 span {
+    display: inline-block;
+  }
+}
